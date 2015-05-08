@@ -7,25 +7,27 @@
 
 <body>
 <p> 한글 테스트 </p><br>
-회원프로필-페이지레이아웃<br>
+<ul>회원프로필-페이지레이아웃<br>
 1단계 로그인<br>
-아이디(이메일) :<br>
-패스워드 :<br>
-패스워드확인:<br>
+아이디(이메일) :<input type ="text" ng-model="signId"><br>
+패스워드 :<input type ="text" ng-model="signPassword"><br>
+패스워드확인:<input type ="text" ng-model="signPasswordCheck"><br>
+다음단계<br>
 2단계 회원프로필<br>
-회원분류(선생님,일반인(학생),기업) 선택<br>
-이름: <br>
-성별 : 남/여 선택<br>
-지역/구 선택<br>
-핸드폰 번호 :<br>
+회원분류(선생님,일반인(학생),기업) 선택<input type ="text" ng-model="signCategory"><br>
+이름: <input type ="text" ng-model="signName"><br>
+성별 : 남/여 선택<input type ="text" ng-model="signSex"><br>
+지역/구 선택<input type ="text" ng-model="signAddress"><br>
+핸드폰 번호 :<input type ="text" ng-model="signPhoneNumber"><br>
+이전 다음단계<br>
 3단계 보너스 포인트<br>
-설명메시지 - "3000점 모으면 현금처럼 사용가능"<br>
-카카오톡 아이디(300점) :<br>
-페이스북(300점):<br>
-카카오스토리(300점):<br>
-트위터(100점):<br>
+설명메시지 - "3000점 모으면 현금처럼 사용가능"<input type ="text" ng-model="signMessage"><br>
+카카오톡 아이디(300점) :<input type ="text" ng-model="signKakaoId"><br>
+페이스북(300점):<input type ="text" ng-model="signFaceBookId"><br>
+카카오스토리(300점):<input type ="text" ng-model="signKakaoStoryId"><br>
 <br>
-취소/  확인하기<br>
+<button>수정</button><button>닫기</button><br>
+</ul>
 
 </body>
 

@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="">
 
 <head>
 <meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
 </head>
 
 <body>
-<p> 한글 테스트 </p><br>
+
 글읽기-페이지레이아웃<br>
-글번호(자동기입/수정불가)<br>
-작성일(자동입력/수정불가)<br>
-글삭제하기(버튼)<br>
-이름 / 아이디 (자동입력/수정불가)<br>
-분류(학생,선생님,기업/자동입력 및 수정불가)<br>
-메시지출력<br>
-프로필보기(버튼)<br>
 
 
+글번호(자동기입/수정불가)<input type ="text" ng-model="boardNumber"><br>
+작성일(자동입력/수정불가)<input type ="text" ng-model="boardDate"><br>
+<button >글삭제하기(버튼)</button><br>
+이름 / 아이디 (자동입력/수정불가)<input type ="text" ng-model="boardName"><br>
+분류(학생,선생님,기업/자동입력 및 수정불가)<input type ="text" ng-model="boardCategory"><br>
+메시지출력<input type ="text" ng-model="boardMessage"><br>
+
+<a href = "signprofile">프로필보기(버튼 또는 텍스트)</a><br>
+
+
+
+<p> 한글 테스트 </p><br>
+
+<div>
+ <p> angularJS : 1*2 = {{1*2}}</p>
+</div>
 </body>
 
 </html>

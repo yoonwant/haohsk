@@ -2,17 +2,41 @@
 <html>
 
 <head>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 <meta charset="UTF-8">
 </head>
 
-<body>
+<body ng-app="boardDelete" ng-controller="boardDeleteController as bdc">
 <p> 한글 테스트 </p><br>
 글삭제-페이지레이아웃<br>
-: 글읽기-페이지에 삭제기능을 넣었음.<br>
-:글삭제하기(버튼)을 누르면 <br>
-알림창(취소/삭제 )이 뜬다.<br>
+설명 : 글읽기-페이지에 삭제기능을 넣었음./ 글삭제하기(버튼)을 누르면 뜬다.<br>
+<br>
 
+글번호(자동기입/수정불가) :<input type ="text" ng-model="bdc.boardNumber"><br>
+작성일(자동입력/수정불가) :<input type ="text" ng-model="bdc.boardDate"><br>
+<br>
+이름 / 아이디 (자동입력/수정불가) :<input type ="text" ng-model="bdc.boardName"><input type ="text" ng-model="bdc.boardId"><br>
+분류(학생/선생님/기업):<input type ="text" ng-model="bdc.boardCategory"><br>
+메시지:<input type ="text" ng-model="bdc.boardMessage"><br>
+<br>
+<button ng-model="boardButtonOk">삭제</button>
+<button ng-model="boardButtonCancel">취소</button>
 
+<br>
+
+<script>
+var boardDelete = angular.module("boardDelete",[]);
+boardDelete.controller("boardDeleteController",function($scope){
+	var bdc = this;
+	bdc.boardNumber = 1000;
+	bdc.boardDate = 2015-04-24;
+	bdc.boardName = "윤승현";
+	bdc.boardCategory = "학생";
+	bdc.boardId = "yoonwant@gmail.com";
+	bdc.boardMessage = "오늘 하루도 즐거운 하루가 되었다.";
+});
+
+</script>
 </body>
 
 </html>
